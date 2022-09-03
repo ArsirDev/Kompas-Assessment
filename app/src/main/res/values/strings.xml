@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kompas Android Assessment</string>
+    <string name="runtime_message">must implement onClick</string>
+    <string name="ui_text_unknown_error">Terjadi_kesalahan</string>
+    <string name="server_maintenace">Server sedang maintenace</string>
+    <string name="unwrap_cannot_retrieve_data_text">Tidak dapat menerima data</string>
+    <string name="unwrap_timeout_error_text">Timeout</string>
+    <string name="unwrap_network_error_text">Kesalahan pada jaringan</string>
+    <string name="username_text">Username</string>
+</resources>

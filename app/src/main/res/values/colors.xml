@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#2B2236</color>
+    <color name="colorPrimaryDark">#1D1724</color>
+    <color name="colorPrimaryToolbar">#18131E</color>
+    <color name="colorPrimaryDarkOpaque">#9E1D1724</color>
+    <color name="colorCardDark">#282032</color>
+    <color name="colorCardBgColor">#362B45</color>
+    <color name="colorCardSecondBgColor">#2B2237</color>
+    <color name="colorCardBgColorBlueDark">#4B3B60</color>
+    <color name="colorLabelBg">#6A3BC0</color>
+    <color name="colorGreen">#00D563</color>
+    <color name="colorGreenDark">#008C41</color>
+    <color name="colorOutline">#3B3247</color>
+    <color name="colorDivider">#0E0F11</color>
+    <color name="colorOrangeBadge">#FF8900</color>
+    <color name="colorTextField">#15111A</color>
+    <color name="colorIconColor">#3B2E49</color>
+    <color name="colorTextColorWhite">#EDEDED</color>
+    <color name="colorTextColorBlack">#000000</color>
+    <color name="colorTextDisabled">#3B2E49</color>
+    <color name="colorTextColorGrey">#8C8C8C</color>
+    <color name="colorTextColorRed">#FF1D49</color>
+    <color name="colorTextLightBlue">#20D7FF</color>
+    <color name="colorYellow">#FABE2C</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorWhiteTransparent">#03FFFFFF</color>
+    <color name="colorBlue">#1B32FD</color>
+    <color name="colorXp">#5E95FF</color>
+    <color name="colorElectricPurple">#AC2FF9</color>
+    <color name="colorShimmer_color">#65FFFFFF</color>
+    <color name="colorCycle_border">#18203A</color>
+    <color name="editTextBackground">#F5F5F5</color>
+    <color name="colorTextGrey">#707070</color>
+</resources>

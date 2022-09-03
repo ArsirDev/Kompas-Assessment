@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="image_corner_50">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="CustomEditText">
+        <item name="android:background">@drawable/custom_edit_text</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingStart">11dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingEnd">30dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textColor">@drawable/custom_text_color</item>
+        <item name="android:textColorHint">@color/colorCardBgColor</item>
+    </style>
+</resources>

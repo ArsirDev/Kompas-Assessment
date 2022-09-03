@@ -1,0 +1,105 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+
+android {
+    compileSdk 32
+
+    def BASE_URL = "BASE_URL"
+    def TOKEN = "TOKEN"
+
+    def apikeyPropertiesFile = rootProject.file("apikey.properties")
+    def apikeyProperties = new Properties()
+    apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+
+    defaultConfig {
+        applicationId "com.example.kompasandroidassessment"
+        minSdk 26
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+        vectorDrawables {
+            useSupportLibrary = true
+        }
+
+        buildConfigField("String", BASE_URL, apikeyProperties['BASE_URL'])
+        buildConfigField("String", TOKEN, apikeyProperties['TOKEN'])
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    // Android
+    implementation(
+            AndroidLibraries.core,
+            AndroidLibraries.appCompat,
+            AndroidLibraries.material,
+            AndroidLibraries.constraintLayout,
+            AndroidLibraries.lifecycleExtensions,
+            AndroidLibraries.lifecycleViewModel,
+            AndroidLibraries.lifecycleCompiler,
+            AndroidLibraries.lifecycleRuntime,
+            AndroidLibraries.lifecycleLivedata,
+            AndroidLibraries.splash,
+            AndroidLibraries.viewPager,
+            AndroidLibraries.dataStore,
+            AndroidLibraries.navigation_fragment,
+            AndroidLibraries.navigation_ui,
+            AndroidLibraries.legacy,
+            AndroidLibraries.hilt,
+            AndroidLibraries.hilt_viewmodel
+    )
+
+    // Libraries
+    implementation(
+            Libraries.dotViewPager,
+            Libraries.lottie,
+            Libraries.retrofit,
+            Libraries.retrofit_converter,
+            Libraries.gson,
+            Libraries.glide,
+            Libraries.room,
+            Libraries.room_ktx,
+            Libraries.swipe_refresh,
+            Libraries.inteceptor
+    )
+
+    // Kapt
+    kapt(
+            KaptLibraries.kaptGlide,
+            KaptLibraries.hilt_compiler,
+            KaptLibraries.room_compiler,
+    )
+
+    // Test
+    implementation(
+            TestLibraries.junit,
+            TestLibraries.extJunit,
+            TestLibraries.espresso
+    )
+}
